@@ -14,17 +14,6 @@ export default (state = INITIAL_STATE, action) => {
                 ...state,
                 getdata: action.payload
             })
-            case ActionTypes.NAME:
-            return ({
-                ...state,
-                name: action.payload
-            })
-      
-            case ActionTypes.DATA:
-            return ({
-                ...state,
-                array: action.payload
-            })
       
         default:
             return state;
