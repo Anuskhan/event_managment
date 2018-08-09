@@ -1,27 +1,5 @@
 
 import ActionTypes from '../constant/constant';
-// import history from '../../History';
-// import createBrowserHistory from 'history/createBrowserHistory'
-import firebase from 'firebase';
-// import createBrowserHistory from 'history/createBrowserHistory';
-// const history = createBrowserHistory()
-
-// const hsitory = createBrowserHistory()
-
-
-
-
-
-  var config = {
-    apiKey: "AIzaSyBU9H-abTd31otb8bJut_5WWUOt8cQazaU",
-    authDomain: "reactnative-32c24.firebaseapp.com",
-    databaseURL: "https://reactnative-32c24.firebaseio.com",
-    projectId: "reactnative-32c24",
-    storageBucket: "reactnative-32c24.appspot.com",
-    messagingSenderId: "163065329715"
-  };
-  firebase.initializeApp(config);
-
 
 
 export function fatchdatafun(name) {
