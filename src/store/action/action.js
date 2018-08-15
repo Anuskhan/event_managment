@@ -3,7 +3,6 @@ import ActionTypes from '../constant/constant';
 
 
 export function fatchdatafun(name) {
-    console.log(name,"bhai")    
 return function(dispatch){
 
     // fetch(`https://www.metaweather.com/api/location/search/?query=${name}`, {mode: 'no-cors'})
@@ -24,7 +23,6 @@ return function(dispatch){
 
 
 export function NameFun(obj) {
-    console.log(obj,"Name")
     return (
         dispatch => {
             console.log("dispatc",dispatch)
@@ -33,7 +31,6 @@ export function NameFun(obj) {
         )
 }
 export function useable(obj) {
-    console.log(obj,"rudexxx")
     return (
         dispatch => {
                 dispatch({ type: ActionTypes.DATA, payload: obj })

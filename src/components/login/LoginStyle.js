@@ -1,46 +1,43 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
 const imageWidth = Dimensions.get('window').width / 2;
-// const {height,width} = Dimensions.get('window');
 
 export default LoginStyle = StyleSheet.create({
     loginBackgroundImage: {
         flex: 1
     },
     ButtonStyle: {
-     backgroundColor:'#E69008',
+     backgroundColor:'#d9005f',
      width:'90%',
     alignItems:'center',
     color:'blue',
     borderRadius:5,
     height:50,
+    marginVertical:20,
     justifyContent:'center',
-    // fontStyle:'bold',
     
 },
 
     viewBoxTop: {
-        // flex: 0.3,
         height:'40%',
-        //  backgroundColor: 'red',
           justifyContent: 'center',
            alignItems: 'center',
-        //    marginBottom:20,
     },
 
     viewBoxButtom: {
         height:'60%',
     },
+    buttomText: {
+        color: '#053173'
+    },
     textColor: {
         color:'#ffffff',
-    fontFamily:'Lato-Regular'
     },
 
     Logoimage: {
         width: imageWidth,
-        marginTop:50,
+        // marginTop:50,
         marginBottom:20,
-        
         resizeMode: 'contain'
     },
 
@@ -49,10 +46,9 @@ export default LoginStyle = StyleSheet.create({
         marginTop:20,
         marginBottom:20,
         color:'#ffffff'
-        // font-family: 'Lato', 
+        
     },
     TextInputView: {
-        // backgroundColor:'red',
         marginTop:10,
         flexDirection: 'row',
         borderColor: 'gray',
@@ -68,7 +64,6 @@ export default LoginStyle = StyleSheet.create({
     TextInputStyle: {
        flex:1,       
        color:'grey',
-        // backgroundColor:'red',
        marginRight:10
        
       

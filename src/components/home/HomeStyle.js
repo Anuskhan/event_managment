@@ -10,7 +10,6 @@ export default DashboardStyle = StyleSheet.create({
     TextInputStyle: {
        flex:1,       
        color:'grey',
-        // backgroundColor:'red',
        marginRight:10
     },
 

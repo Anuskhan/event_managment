@@ -23,11 +23,17 @@ export default class Dashboard extends Component {
         this.setState({[name]: val})
     }
 
-    componentWillMount(){
-        axios.post('members/', payload)
-        .then((response) => {
-      console.log(response,"response")    
-    }).catch((error) => {
+    componentDidMount(){
+       this.checkApi()
+    }
+    checkApi=()=>{
+        
+        console.log("componentDidMount+======")
+        // axios.get(`https://jsonplaceholder.typicode.com/posts`)
+        axios.get('http://connfa.com/api/getinfo/')
+        .then((res) => {
+      console.log(res.data,"response")    
+    }).catch((error) => { 
         
         console.log(error,"error")    
         }
@@ -40,6 +46,11 @@ export default class Dashboard extends Component {
                     <Text>
                         Dashboard
                     </Text>
+                    <TouchableOpacity onPress={this.checkApi} style={{borderWidth:1,height:50}}>
+                        <Text >
+                            click
+                        </Text>
+                    </TouchableOpacity>
                 </View>
             
             

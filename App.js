@@ -6,8 +6,6 @@ import {
   View
 } from 'react-native';
 import { Drawer } from './src/components/routing/route'
-import {Provider} from 'react-redux';
-// import store from './src/store';
 export default class App extends Component<{}> {
   constructor(props){
     super(props);
@@ -25,12 +23,8 @@ export default class App extends Component<{}> {
   render() {
     return (
         <View style={styles.container}>
-
          <Drawer screenProps={{logedIn: this.state.logedIn}}/>
-
-        
         </View>
-
     );
   }
 }
@@ -51,3 +45,10 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
+// event event details
+//	id	name	email	password	remember_token	created_at	updated_at
+//event start_at	end_at text	name place version level_id type_id	track_id
+//url event_type order deleted_at created_at updated_at 
+
+/// EVENT id	start_at	end_at	text	name	place	version	level_id	type_id	track_id	url	event_type	order	deleted_at	created_at	updated_at	conference_id
+//LOACTION id	name	lat	lon	address	order	deleted_at	created_at	updated_at	conference_id

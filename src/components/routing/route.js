@@ -10,5 +10,5 @@ export const Drawer = DrawerNavigator ({
     }
 }, {
     contentComponent: DrawerItemsComponent,
-    drawerWidth: Dimensions.get('window').width/1.25
+    drawerWidth: Dimensions.get('window').width/1.30
 });

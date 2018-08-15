@@ -2,6 +2,10 @@ import { StackNavigator } from 'react-navigation';
 import { StyleSheet, Image, View, Text } from 'react-native';
 import Login from '../login/Login';
 import Dashboard from '../dashboard/Dashboard';
+import Home from '../home/Home';
+import Events from '../events/Event';
+import EventDetail from '../eventDetail/EventDetail';
+import Speaker from '../speaker/Speaker';
 import SignUp from '../signup/signup';
 import React, { Component } from 'react';
 import { NavigationActions } from 'react-navigation';
@@ -45,7 +49,30 @@ export const MainStack = StackNavigator({
             header: null,
         }
     },
-   
+    Events: {
+        screen: Events,
+        navigationOptions: {
+            header: null,
+        }
+    },
+    Speaker: {
+        screen: Speaker,
+        navigationOptions: {
+            header: null,
+        }
+    },
+    EventDetail: {
+        screen: EventDetail,
+        navigationOptions: {
+            header: null,
+        }
+    },
+    Home: {
+        screen: Home,
+        navigationOptions: {
+            header: null,
+        }
+    },
     Signup: {
         screen: SignUp,
         navigationOptions: {
@@ -63,7 +90,7 @@ export const MainStack = StackNavigator({
         initialRouteName: 'Dashboard',
         navigationOptions: {
             headerTitle: <View style={styles.headerLogoContainer}>
-                {/* <Image style={styles.headerLogoImage} source={require('../../assets/images/header-logo.png')} /> */}
+                <Image style={styles.headerLogoImage} source={require('../../assets/images/background.jpg')} />
 
             </View>,
             headerTintColor: headerTintColor,

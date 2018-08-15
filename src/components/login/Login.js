@@ -9,7 +9,8 @@ import {
     Button,
     ImageBackground
 } from 'react-native';
-// import Icon from 'react-native-vector-icons/dist/FontAwesome';
+import Icon from 'react-native-vector-icons/Ionicons';
+
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import LoginStyle from './LoginStyle';
 
@@ -28,11 +29,11 @@ export default class Login extends Component<{}> {
 
     render() {
         return (
-            // <ImageBackground style={{ flex: 1 }} source={require('../../assets/images/loginbackground.png')}>
+            <ImageBackground style={{ flex: 1 }} source={require('../../assets/images/background.jpg')}>
                 <ScrollView>
                     <View style={LoginStyle.viewBoxTop} >
                         <Image style={LoginStyle.Logoimage}
-                            source={require('../../assets/images/logo.jpg')} />
+                            source={require('../../assets/images/logo.png')} />
                     </View>
 
                     <View style={LoginStyle.viewBoxButtom} >
@@ -44,7 +45,7 @@ export default class Login extends Component<{}> {
                                     onChange={this.onChange.bind(this, 'email')}
                                     value={this.state.email}
                                 />
-                                <Ionicons color='gray' size={24} name="ios-mail-outline" />
+                                {/* <Ionicons color='gray' size={24} name="ios-mail-outline" /> */}
                             </View>
                             <View style={LoginStyle.TextInputView}>
                                 <TextInput underlineColorAndroid='transparent'
@@ -54,13 +55,13 @@ export default class Login extends Component<{}> {
                                     placeholder="Password"
                                     value={this.state.password}
                                 />
-                                <Ionicons color='gray' size={24} name="ios-lock-outline" />
+                                {/* <Ionicons color='gray' size={24} name="ios-lock-outline" /> */}
                             </View>
                             
                             <TouchableOpacity style={LoginStyle.ButtonStyle}
                              onPress={() => { this.props.navigation.navigate("Home") }}
                             >
-                                <Text style={{ color: '#053173',fontFamily:'Lato-Bold' }}>
+                                <Text style={LoginStyle.buttomText}>
                                     LOG IN
                  </Text>
                             </TouchableOpacity>
@@ -74,7 +75,7 @@ export default class Login extends Component<{}> {
                         </View>
                     </View>
                 </ScrollView>
-            // </ImageBackground>
+            </ImageBackground>
 
         );
     }
